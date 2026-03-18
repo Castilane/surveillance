@@ -34,7 +34,7 @@ def simple_watchdog():
 
             # 2. 识别二维码
             decoded_objects = decode(frame)
-
+            tag=1
             # 3. 判断结果
             if decoded_objects:
                 # 发现目标！
@@ -47,6 +47,7 @@ def simple_watchdog():
                         try:
                             print(f"内容: {content}")
                             auto_sign(content)
+                            tag=0
                         except:
                             print("error")
                     else:
@@ -62,7 +63,7 @@ def simple_watchdog():
                 pass
 
             # 4. 严格执行“每秒检测”
-            time.sleep(1)
+            time.sleep(tag)
 
         except KeyboardInterrupt:
             print("\n>>> 遵命，停止监听。")
