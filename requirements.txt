@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+ddddocr
+pillow
+pyzbar
+numpy
+opencv-python

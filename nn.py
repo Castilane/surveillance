@@ -48,11 +48,10 @@ def simple_watchdog():
                 # 疯狂尖叫，呼唤主人
                 alert_sound()
                 # try: auto_sign(...)
+
                 # 稍微暂停一下以免警报声连成一片太吵（或者您可以删掉这行让我一直叫）
                 # time.sleep(0.5)
             else:
-                # 没发现，保持沉默，但我依然在工作
-                # print(".", end="", flush=True) # 只是为了证明我没死机
                 pass
 
             # 4. 严格执行“每秒检测”
