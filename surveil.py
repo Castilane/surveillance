@@ -6,9 +6,9 @@ from urllib.parse import urlparse, parse_qs
 import json
 import time
 
-# fill in the contents
-USERNAME = "pass"
-PASSWORD = "pass"
+# fill in the contents: username & password
+USERNAME = ""
+PASSWORD = ""
 url = "https://mlearning.sjtu.edu.cn/lms/mobile2/forscan/?..."
 
 
@@ -163,6 +163,7 @@ def auto_sign(TARGET_QR_URL):
         print("❌ 解析 JSON 失败。响应内容如下：")
         print(final_resp.text[:300])
 
-
+'''
 if __name__ == "__main__":
     auto_sign(url)
+'''

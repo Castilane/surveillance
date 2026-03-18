@@ -43,7 +43,14 @@ def simple_watchdog():
                 # 打印出内容给您审阅
                 for obj in decoded_objects:
                     content = obj.data.decode('utf-8')
-                    print(f"内容: {content}")
+                    if content.startswith("https://mlearning.sjtu.edu.cn/lms/mobile2/forscan/?courseCode="):
+                        try:
+                            print(f"内容: {content}")
+                            auto_sign(content)
+                        except:
+                            print("error")
+                    else:
+                        print(f"无法解析的内容: {content}")
 
                 # 疯狂尖叫，呼唤主人
                 alert_sound()
