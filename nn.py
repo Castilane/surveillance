@@ -3,7 +3,7 @@ import winsound  # 仅限 Windows 系统使用，用于发出蜂鸣声
 from PIL import ImageGrab
 from pyzbar.pyzbar import decode
 import numpy as np
-
+from surveil import auto_sign
 
 def alert_sound():
     """
